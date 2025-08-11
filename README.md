@@ -5,7 +5,9 @@
 Plays an audio file in terminal, during which the sung lines can be synchronized by pressing Enter.
 
 1. Install pre-requisites: simpleaudio (with `pip`) and ffmpeg.
-2. Run `$ python3 synchronizer.py audio.wav lyrics.txt --out aligned_lines.txt`
+2. Run `$ python3 synchronizer.py audio.wav lyrics.txt --out aligned_lines.csv`
+
+Outputs a .csv file with three columns: start time in seconds, end time in seconds, and text.
 
 ## timer.py
 
@@ -17,7 +19,7 @@ Adjusts **all** timings in **all** .csv lyrics files within a folder.
 
 Adds a single text layer to AE which scrolls upwards according to .csv time stamps.
 
-1. Create a .csv file without headers, and with three values per row: start time in seconds, end time, text, e.g.
+1. Create a .csv file without headers (with synchronizer.py or otherwise), and with three values per row: start time in seconds, end time, text, e.g.
 
 ```
 0,2,"First line"
