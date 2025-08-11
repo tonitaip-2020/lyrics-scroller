@@ -1,4 +1,17 @@
-# Tools for scrolling lyrics in AE.
+# Tools for scrolling lyrics in AE
+
+## synchronizer.py
+
+Plays an audio file in terminal, during which the sung lines can be synchronized by pressing Enter.
+
+1. Install pre-requisites: simpleaudio (with `pip`) and ffmpeg.
+2. Run `$ python3 synchronizer.py audio.wav lyrics.txt --out aligned_lines.txt`
+
+## timer.py
+
+Adjusts **all** timings in **all** .csv lyrics files within a folder. 
+
+1. Execute the file with Python 3, e.g. `$ python3 timer.py`
 
 ## scroller.jsx
 
@@ -19,8 +32,3 @@ The values in the second column (end time) make no difference for the timing.
 4. Select the .csv file you want to scroll.
 5. AE creates a new text layer in the selected composition.
 
-## timer.py
-
-Adjusts **all** timings in **all** .csv lyrics files within a folder. 
-
-1. Execute the file with Python 3, e.g. `$ python3 timer.py`
