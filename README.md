@@ -34,3 +34,8 @@ The values in the second column (end time) make no difference for the timing.
 4. Select the .csv file you want to scroll.
 5. AE creates a new text layer in the selected composition.
 
+## merge_lyrics_to_srt.py
+
+Merges multiple .csv files into one .srt file, in case you need subtitles (e.g., for translations) for a whole album.
+
+1. Execute the file with Python 3, e.g., `$ python3 merge_lyrics_to_srt.py . output.srt`
